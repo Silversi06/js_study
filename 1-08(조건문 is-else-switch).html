@@ -16,7 +16,7 @@
             console.log("당신은 미성년자입니다.");
         }
 
-      // if ... elseif... else
+//      if ... elseif... else
         var hour =14;
         if(hour <10){
             console.log("Good morning");
@@ -30,6 +30,55 @@
         else{
             console.log("Good night");
         }
+
+        var isAbult;
+        var age=17;
+
+        if(age>18){
+            isAdult=true;
+        }
+        else{
+            isAdult=false;
+        }
+        
+        var age = 17;
+        var isAdult = false;
+        if(age>18){
+            isAbult =true;
+        }
+
+        var d = new Date();
+        var day =d.getDay();    //일요일:0 월요일:1 .....토요일:6
+        console.log(day);
+        var dayName ="";
+
+        switch(day){    //정수
+            case 0:
+                dayName ="일요일";
+                break;
+            case 1:
+                dayName ="월요일";
+                break;
+            case 2:
+                dayName ="화요일";
+                break;
+            case 3:
+                dayName ="수요일";
+                break;
+            case 4:
+                dayName ="목요일";
+                break;
+            case 5:
+                dayName ="금요일";
+                break;
+            case 6:
+                dayName ="일요일";
+                break;
+
+
+        }
+
+
 
 
     </script>
