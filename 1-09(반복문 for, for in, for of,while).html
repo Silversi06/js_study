@@ -54,6 +54,33 @@
             console.log(key);
             console.log(person[key]);
         }
+
+        var cars =["현대","기아","볼보","벤츠"];
+        for(var car in cars){
+            console.log(car);
+        }
+
+        for(var car of cars){
+            console.log(car);
+        }
+
+        //while문
+        var i =11;
+        var total = 0;
+        while(i<10){
+            total+=i;
+            i++;
+        }
+        console.log(total);
+
+        //do while 문
+        var i=11;
+        var total = 0;
+        do{
+            total+=i;
+        }while(i<=10)
+        console.log(total);
+
     </script>
 </body>
 </html>
