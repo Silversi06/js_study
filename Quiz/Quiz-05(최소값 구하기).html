@@ -4,13 +4,21 @@
 </head>
 <body>
     <script>
+        //방법 1 : for문 사용
+        // function soluction(arr){
+        //     let answer, min = Number.MAX_SAFE_INTEGER;
+        //    // console.log(min);
+        //    for(let i = 0; i<arr.length; i++){
+        //     if(arr[i]<min) min= arr[i];
+        //    }
+        //     answer= min;
+        //     return answer;
+        //}
+
+        //방법2 : 내장함수를 이용
+        //console.log(Math.min(3,2,7));
         function soluction(arr){
-            let answer, min = Number.MAX_SAFE_INTEGER;
-           // console.log(min);
-           for(let i = 0; i<arr.length; i++){
-            if(arr[i]<min) min= arr[i];
-           }
-            answer= min;
+            let answer = Math.max(...arr);  //...(펼치기 용도)
             return answer;
         }
         let arr = [5,3,7,11,2,15,17];
