@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Windows객체</title>
+</head>
+<body>
+    <script>
+        console.log(window);
+        //window.alert("이것은 대화창입니다");
+
+        // var yn = confirm("정말로 삭제하시겠습니까?");
+        // console.log(yn);
+
+        // if(confirm("정말로 삭제하시겠습니까?")){
+        //     //DB삭제하는 코드 삽입
+        //     console.log("삭제 실행");
+        // }
+
+        // var txt = prompt("비밀번호를 입력하세요 : ");
+        // //console.log(txt);   //취소누르면 nell값
+
+        // if(txt===null) console.log("취소 선택");
+        // else if(txt==="") console.log("확인 선택");
+        // else if(txt!=="") console.log(txt);
+
+        // window.open("https://www.naver.com");
+        // window.print();
+
+        //setTimeout
+        // setTimeout(function(){
+        //     console.log("안녕하세요");
+        // }, 3000);
+
+        //setInteval
+        // var  i =0;
+        // setInterval(function(){
+        //     console.log("안녕하세요"+i);
+        //     i++;
+        // }, 3000);
+
+        var  i =0;
+        var fnc = setInterval(function(){
+            console.log("안녕하세요"+i);    
+            if(i===3){
+                clearInterval(fnc);
+            }
+            i++;
+        }, 3000);
+        
+    </script>
+</body>
+</html>
