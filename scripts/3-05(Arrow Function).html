@@ -11,11 +11,37 @@
         // }
         // hello1();
 
-        var hello2 = function(){
-            console.log("Hello World");
-            return "Welcome";
-        }
-        hello2();
+        // var hello2 = function(){
+        //     console.log("Hello World");
+        //     return "Welcome";
+        // }
+        // hello2();
+
+        //Arrow Fuction
+        // var hello3 =()=>{
+        //     console.log("Hello World");
+        //     return "Welcome";
+        // }
+        // hello3();
+
+        // var hello4 =()=> "Welcome"
+        // console.log (hello4());   
+
+        // function hello5(fullName){
+        //     return "Welcome"+" "+fullName;
+        // }
+        // console.log(hello5("홍길동"));
+
+        //hello5()를 arrow function으로 변환
+        // var hello5 = (fullName)=>"Welcome"+" "+fullName;
+        // console.log(hello5("홍길동"));
+
+        // var hello5 = (firstName, lastName)=>"Welcome"+" "+firstName+" "+lastName;
+        // console.log(hello5("홍", "길동"));
+
+        //매개변수가 하나일 경우에는 {} 생략가능
+        var hello5 = fullName=>"Welcome"+" "+fullName;
+        console.log(hello5("홍길동"));
     </script>
 </body>
 </html>
