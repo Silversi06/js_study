@@ -5,67 +5,68 @@
 <body>
     <script>
         //length :문자열의 길이를 리턴
-        var txt ="ASDASDSDAAAA";
-        console.log(txt.length);
+        // var txt ="ASDASDSDAAAA";
+        // console.log(txt.length);
 
         //indexOf:특정한 문자열의 위치값을 리턴
         var str = "Please locate where locate";
 
         //console.log(str);
-        console.log(str.indexOf("locate"));
-        console.log(str.indexOf("choi"));
-        if(str.indexOf("locate")>-1){
-            console.log("locate 문자 발견");
-        }
-        //lastIndexOd
-        console.log(str.lastIndexOf("locate"));
-        //search
-        console.log(str.search("locate"));
+         //console.log(str.indexOf("locate"));
+        // console.log(str.indexOf("a"));
+        // console.log(str.indexOf("choi"));
+        // if(str.indexOf("locate")>-1){
+        //     console.log("locate 문자 발견");
+        // }
+        //lastIndexOf
+        // console.log(str.lastIndexOf("locate"));
+        // //search
+        // console.log(str.search("locate"));
 
         //slice
         var str="Apple, Banana ,Kiwi";
         //시작인덱스 , 종료인덱스 -1
-        console.log(str.slice(7,13));   //Banana출력
-        console.log(str.slice(7));  //Banana, Kiwi출력
-        console.log(str.slice(-12,-6)); //Banana출력, -붙이면 맨끝 문자열에서부터 -1부터시작
+        // console.log(str.slice(7,13));   //Banana출력
+        // console.log(str.slice(7));  //Banana, Kiwi출력
+        // console.log(str.slice(-12,-6)); //Banana출력, -붙이면 맨끝 문자열에서부터 -1부터시작
 
-        //substring
-        console.log(str.substring(7,13));   //출력값 Banana
+        // //substring
+        // console.log(str.substring(7,13));   //출력값 Banana
 
         //substr
-        console.log(str.substring(7,6));
+        //console.log(str.substr(7,6));
 
         // var jumin1 = "070828";
         // console.log(jumin1.substr(0,2));
         // console.log(jumin1.substr(2,2));
         // console.log(jumin1.substr(4,2));
 
-        var jumin2 = "2007-08-28";
-        console.log(jumin2.substring(0, jumin2.indexOf("-"))); //2007
+        // var jumin2 = "2007-08-28";
+        // console.log(jumin2.substring(0, jumin2.indexOf("-"))); //2007
         
 
         //replace
-        var str1 ="please visit here";
-        var str2=str1.replace("here","there");
-        console.log(str2);
+        // var str1 ="please visit here";
+        // var str2=str1.replace("here","there");
+        // console.log(str2);
 
-        var str3 ="please visit here here here"
-        var str4 = str3.replace("here","there");
-        console.log(str4);  //한 개만 바뀜
+        // var str3 ="please visit here here here"
+        // var str4 = str3.replace("here","there");
+        // console.log(str4);  //한 개만 바뀜
 
-        var str5 = "please visit here here here";
-        var str6=str5.replace(/here/g, "there");    //here 옆에 g를 쓰면 모두 바뀜 
-        //g = global 의미
-        console.log(str6);
+        // var str5 = "please visit here here here";
+        // var str6=str5.replace(/here/g, "there");    //here 옆에 g를 쓰면 모두 바뀜 
+        // //g = global 의미
+        // console.log(str6);
 
-        var str7 = "please visit here HERE Here";
-        var str8 = str7.replace(/here/gi,"there");  //here 옆에 gi를 쓰면 대소문자 무시하고 바뀜
-        //i=ignore 의미
-        console.log(str8);
+        // var str7 = "please visit here HERE Here";
+        // var str8 = str7.replace(/here/gi,"there");  //here 옆에 gi를 쓰면 대소문자 무시하고 바뀜
+        // //i=ignore 의미
+        // console.log(str8);
 
-        var str9 = "please visit here HERE Here";
-        console.log(str9.toUpperCase());
-        console.log(str9.toLowerCase());
+        // var str9 = "please visit here HERE Here";
+        // console.log(str9.toUpperCase());
+        // console.log(str9.toLowerCase());
 
         //데이터베이스:John, JOHN,john
         var txt1 = "Hello";
@@ -80,7 +81,6 @@
 
         //padStart
         var str11 = "5";
-       
         console.log(str11.padStart(4, 0));
         
         var str12 ="3";
