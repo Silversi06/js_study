@@ -35,14 +35,15 @@
 
         function sum(...args){  //매개변수를 배열로 받음.
             var total = 0;
-            for(var x of args){
-                total+= x;
-            }
+            args.forEach(function(x,i){   //(x,i) i=인덱스
+                //console.log(x);
+                total+=x;
+            });
             console.log(total);
         }
-        
-        sum(5,7);
-        sum(3,2,4);
+
+        // sum(5,7);
+        // sum(3,2,4);
         sum(3,2,4,5);
       
     </script>
