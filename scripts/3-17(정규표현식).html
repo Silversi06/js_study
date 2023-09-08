@@ -4,6 +4,45 @@
 </head>
 <body>
     <script>
+        // var patt = /World/i;    //World:패턴, i:modifier
+        // var str1 = "Hello World!";
+        // console.log(str1.search("World"));
+        // console.log(str1.search(/World/));
+        // console.log(str1.search(/World/i)); //i:대소문자를 구분하지 않는다.
+
+        // var str2= "Hello WORLD! world";
+        // console.log(str2.replace("World"),"Choi");
+        // console.log(str2.replace(/World/i),"Choi");
+        // console.log(str2.replace(/World/ig),"Choi");    //g(global):문자열 전체를 대상
+
+        // var str3 = "It this all there is";
+        // var patt1=/[a-e]/g;    //
+        // var result1=str3.match(patt1);
+        // console.log(result1);
+
+        //[0-9]: 0~9 사이의 모든 숫자를 찾음
+        // var str4 = "123abxd4523kkk";
+        // var patt2 = /[0-9]/g;
+        // var result2 = str4.match(patt2);
+        // console.log(result2);
+
+        // var str5 = "re, green, red, gree, gen, red, blue, yellow";
+        // var patt3 = /(red|green)/g
+        // var result3= str5.match(patt3);
+        // console.log(result3);
+
+        // \d = [0-9]: d(digit)
+        // var str6 = "Please Call 119 Hurry Up";
+        // var patt4 = /\d/g
+        // var result4 = str6.match(patt4);
+        // console.log(result4);
+
+        // \s:공백만 찾아줌
+        var str7 = "Please Call 119 Hurry Up";
+        var patt5 = /\s/g;
+        var result5 = str7.match(patt5);
+        console.log(result5);
+
 
     </script>
 </body>
