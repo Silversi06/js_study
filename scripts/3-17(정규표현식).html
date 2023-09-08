@@ -43,10 +43,21 @@
         // var result5 = str7.match(patt5);
         // console.log(result5);
 
-        var str8 = "HELLO, LOOK At ME!";
-        var patt6 = /LO/g
-        var result6 = str8.search(patt6);
-        console.log(result6);
+        // var str8 = "HELLO, LOOK At ME!";
+        // var patt6 = /LO/g   //출력값 3: 단어 중간에 LO가 들어가는 단어를 찾음.
+        // var patt6 = /\bLO/g //LO로 시작하는 단어를 찾음
+        // var result6 = str8.search(patt6);
+        // console.log(result6);   //출력값 7
+
+        //n+ : n이 최소한 1개이상(one or more)
+        // var str9 = "HellooOo";
+        // var patt7 = /o+/g;
+        // console.log(str9.match(patt7));
+
+        //n* : n이 zero or more
+        var str10 = "HellooOo";
+        var patt8 = /lo*/g;
+        console.log(str10.match(patt8));
 
 
     </script>
