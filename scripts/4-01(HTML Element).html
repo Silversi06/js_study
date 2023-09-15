@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    Text:
+    <br>
+    <input type ="text" value="홍길동" id="text1">
+    <br>
+    관심사 :
+    <br>
+    <input type="checkbox" value="chk_interest" value="it">IT/컴퓨터
+    <input type="checkbox" value="chk_interest" value="entertainment">엔터테인먼트
+    <input type="checkbox" value="chk_interest" value="sports">스포츠
+    <input type="checkbox" value="chk_interest" value="shopping">쇼핑
+    <input type="checkbox" value="chk_interest" value="book">도서/책
+    <br>
+    <input type="radio" name = "radio_email_yn" value="Y" checked>동의
+    <input type="radio" name = "radio_email_yn" value="N">거부
+    <br>
+    Select :
+    <select id="select1">
+        <option value="KO">Korea</option>
+        <option value="CN">China</option>
+        <option value="JP">Japan</option>
+    </select>
+    <br>
+
+    <br>
+    <input type ="button" value="저장" onclick="doSave()">
+    <script>
+        function doSave(){
+            // alert("추억이 떠오르니?");
+            // console.log("[저장] 버튼 클릭");
+            // var txt1 = document.getElementById("text1");
+            // console.log(txt1);
+            // console.log(txt1.value);
+
+            //jQuery 방식
+            var txt2 = document.querySelector("#text1");
+            console.log(txt2);
+            console.log(txt2.value);
+        }
+
+    </script>
+</body>
+</html>

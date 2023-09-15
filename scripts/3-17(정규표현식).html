@@ -60,12 +60,31 @@
         // console.log(str10.match(patt8));
 
         //n? : n이 zero or one
-        var str11 = "1, 100 or 10000";
-        var patt9= /10?/g;
-        console.log(str11.match(patt9));
+        // var str11 = "1, 100 or 10000";
+        // var patt9= /10?/g;
+        // console.log(str11.match(patt9));
 
         //www.w3schools.com <-유용한 사이트
 
+        //우편번호 : 5자리
+        //12345 : 5자리 다 숫자
+        // var patt10 = /\d{5}/;
+        // var postalCode = "123456";
+        // var postalCode ="P12345"
+        // console.log(patt10.test(postalCode));
+
+        // var patt11 = /^\d{5}$/; //^다음에는 반드시 숫자로 시작해라, $: 숫자 5자리까지만 출력해라
+        // var postalCode = "12345";
+        // console.log(patt11.test(postalCode));
+
+        //핸드폰번호: 010 -1234- 5678
+        // var patt12 = /^(010)-\d{4}-\d{4}$/;
+        // var postalCode = "010-1234-5678";
+        // console.log(patt12.test(postalCode));
+
+        //이메일 주소: a49981529@gmail.com
+        var patt13 = /^\w+([\.-]?\w+)*@\w+(\.\w{2,3})+$/;
+        console.log(patt13.test("hanyujinnn@gmail.com"));
 
 
 
