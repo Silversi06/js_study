@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>HTML 스타일 컨트롤</title>
+    <style>
+        .border-red{
+            border: 2px dashed red;
+        }
+
+        .border-green{
+            border:2px solid green;
+        }
+        .border-default{
+            border:2px solid blue;
+        }
+    </style>
+</head>
+<body>
+TEXT:
+<br>
+<input type="text" id="text1" onblur="changeBorder()">
+<br>
+Redio(이메일 수신)
+<input type="radio" name="radio_email_yn" value="Y" onclick="showEmail()">동의
+<input type="radio" name="radio_email_yn" value="N" checked onclick="hideEmail()">거부
+<div id="divEmail" style="display: none;">이메일<input type="text" id ="email"></div>
+<br>
+<select id="select1" onchange="doChange(this)">
+    <option value=""></option>
+    <option value="KO">Korea</option>
+    <option value="CN">China</option>
+    <option value="JP">Japan</option>
+</select>
+
+<select id = "select2" style ="display: none;">
+    <option value="">서울</option>
+    <option value="">대전</option>
+    <option value="">대구</option>
+    <option value="">부산</option>
+</select>
+
+<select id = "select3" style ="display: none;">
+    <option value="">상하이</option>
+    <option value="">베이징</option>
+    <option value="">북경</option>
+</select>
+
+<select id = "select4" style ="display: none;">
+    <option value="">도쿄</option>
+    <option value="">오사카</option>
+    <option value="">후쿠오카</option>
+</select>
+<br>
+<input type="button" value="저장" onclick="doSave()">
+
+
+    <script>
+        function doChange(obj){
+            if(obj.value==="KO"){
+                document.getElementById("select2").style.display="";
+            }
+            else if(obj.value==="CN"){
+                document.getElementById("select3").style.display="";
+            }
+            else if(obj.value==="JP"){
+                document.getElementById("select4").style.display="";
+            }
+            
+        }
+        function showEmail(){
+            document.getElementById("divEmail").style.display = "";
+        }
+        function hideEmail(){
+            document.getElementById("divEmail").style.display = "none";
+        }
+
+        function doSave(){
+            let txt1 = document.getElementById("text1");
+            // console.log("저장");
+            if(txt1.value ===""){
+                txt1.className = "border-red";
+                return alert("필수 값을 입력하세요");
+            }
+        }
+
+        function changeBorder(){
+            // console.log("onBlur() 이벤트 발생");
+            let txt1 = document.getElementById("text1");
+            console.log(txt1.value);
+            if(txt1.value==="green"){
+                txt1.className = "border-green";
+            }
+            else if(txt1.value==="red"){
+                txt1.className = "border-red";
+            }
+            else{
+                txt1.className = "border-default";
+            }
+        }
+
+    </script>
+</body>
+</html>
