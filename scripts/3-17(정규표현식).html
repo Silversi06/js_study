@@ -4,83 +4,83 @@
 </head>
 <body>
     <script>
-        // var patt = /World/i;    //World:패턴, i:modifier
-        // var str1 = "Hello World!";
-        // console.log(str1.search("World"));
-        // console.log(str1.search(/World/));
-        // console.log(str1.search(/World/i)); //i:대소문자를 구분하지 않는다.
+        var patt = /World/i;    //World:패턴, i:modifier
+        var str1 = "Hello World!";
+        console.log(str1.search("World"));
+        console.log(str1.search(/World/));
+        console.log(str1.search(/world/i)); //i:대소문자를 구분하지 않는다.
 
-        // var str2= "Hello WORLD! world";
-        // console.log(str2.replace("World"),"Choi");
-        // console.log(str2.replace(/World/i),"Choi");
-        // console.log(str2.replace(/World/ig),"Choi");    //g(global):문자열 전체를 대상
+        var str2= "Hello WORLD! world";
+        console.log(str2.replace("World"),"Choi");
+        console.log(str2.replace(/World/i),"Choi");
+        console.log(str2.replace(/World/ig),"Choi");    //g(global):문자열 전체를 대상
 
-        // var str3 = "It this all there is";
-        // var patt1=/[a-e]/g;    //
-        // var result1=str3.match(patt1);
-        // console.log(result1);
+        var str3 = "It this all there is";
+        var patt1=/[a-e]/g;    //
+        var result1=str3.match(patt1);
+        console.log(result1);
 
         //[0-9]: 0~9 사이의 모든 숫자를 찾음
-        // var str4 = "123abxd4523kkk";
-        // var patt2 = /[0-9]/g;
-        // var result2 = str4.match(patt2);
-        // console.log(result2);
+         var str4 = "123abxd4523kkk";
+        var patt2 = /[0-9]/g;
+        var result2 = str4.match(patt2);
+        console.log(result2);
 
-        // var str5 = "re, green, red, gree, gen, red, blue, yellow";
-        // var patt3 = /(red|green)/g
-        // var result3= str5.match(patt3);
-        // console.log(result3);
+        var str5 = "red, green, red, gree, gen, red, blue, yellow";
+        var patt3 = /(red|green)/g
+        var result3= str5.match(patt3);
+        console.log(result3);
 
         // \d = [0-9]: d(digit)
-        // var str6 = "Please Call 119 Hurry Up";
-        // var patt4 = /\d/g
-        // var result4 = str6.match(patt4);
-        // console.log(result4);
+        var str6 = "Please Call 119 Hurry Up";
+        var patt4 = /\d/g
+        var result4 = str6.match(patt4);
+        console.log(result4);
 
         // \s:공백만 찾아줌
-        // var str7 = "Please Call 119 Hurry Up";
-        // var patt5 = /\s/g;
-        // var result5 = str7.match(patt5);
-        // console.log(result5);
+        var str7 = "Please Call 119 Hurry Up";
+        var patt5 = /\s/g;
+        var result5 = str7.match(patt5);
+        console.log(result5);
 
-        // var str8 = "HELLO, LOOK At ME!";
-        // var patt6 = /LO/g   //출력값 3: 단어 중간에 LO가 들어가는 단어를 찾음.
-        // var patt6 = /\bLO/g //LO로 시작하는 단어를 찾음
-        // var result6 = str8.search(patt6);
-        // console.log(result6);   //출력값 7
+        var str8 = "HELLO, LOOK At ME!";
+        var patt6 = /LO/g   //출력값 3: 단어 중간에 LO가 들어가는 단어를 찾음.
+        var patt6 = /\bLO/g //LO로 시작하는 단어를 찾음
+        var result6 = str8.search(patt6);
+        console.log(result6);   //출력값 7
 
         //n+ : n이 최소한 1개이상(one or more)
-        // var str9 = "HellooOo";
-        // var patt7 = /o+/g;
-        // console.log(str9.match(patt7));
+        var str9 = "HellooOo";
+        var patt7 = /o+/g;
+        console.log(str9.match(patt7));
 
         //n* : n이 zero or more
-        // var str10 = "HellooOo";
-        // var patt8 = /lo*/g;
-        // console.log(str10.match(patt8));
+        var str10 = "HellooOo";
+        var patt8 = /lo*/g;
+        console.log(str10.match(patt8));
 
         //n? : n이 zero or one
-        // var str11 = "1, 100 or 10000";
-        // var patt9= /10?/g;
-        // console.log(str11.match(patt9));
+        var str11 = "1, 100 or 10000";
+        var patt9= /10?/g;
+        console.log(str11.match(patt9));
 
         //www.w3schools.com <-유용한 사이트
 
         //우편번호 : 5자리
         //12345 : 5자리 다 숫자
-        // var patt10 = /\d{5}/;
-        // var postalCode = "123456";
-        // var postalCode ="P12345"
-        // console.log(patt10.test(postalCode));
+        var patt10 = /\d{5}/;
+        var postalCode = "123456";
+        var postalCode ="P12345"
+        console.log(patt10.test(postalCode));
 
-        // var patt11 = /^\d{5}$/; //^다음에는 반드시 숫자로 시작해라, $: 숫자 5자리까지만 출력해라
-        // var postalCode = "12345";
-        // console.log(patt11.test(postalCode));
+        var patt11 = /^\d{5}$/; //^다음에는 반드시 숫자로 시작해라, $: 숫자 5자리까지만 출력해라
+        var postalCode = "12345";
+        console.log(patt11.test(postalCode));
 
         //핸드폰번호: 010 -1234- 5678
-        // var patt12 = /^(010)-\d{4}-\d{4}$/;
-        // var postalCode = "010-1234-5678";
-        // console.log(patt12.test(postalCode));
+        var patt12 = /^(010)-\d{4}-\d{4}$/;
+        var postalCode = "010-1234-5678";
+        console.log(patt12.test(postalCode));
 
         //이메일 주소: a49981529@gmail.com
         var patt13 = /^\w+([\.-]?\w+)*@\w+(\.\w{2,3})+$/;
